@@ -1,0 +1,8 @@
+com.noman.app.schemas.simple.product.Product
+Product Table
+4
+1,Lux,1053.56,100.00
+4,LifeBoy,23.56,100.00
+2,SavLon,33.56,100.00
+3,Vim,1033.00,100.00
+
