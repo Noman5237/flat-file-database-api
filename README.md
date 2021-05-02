@@ -72,6 +72,11 @@ public void setCustomerType(CustomerType customerType) {
 }
 ```
 
+An example of Schema UML is given below:
+
+![image](https://user-images.githubusercontent.com/31593633/116812283-d3ea4f80-ab6f-11eb-8524-da4983d7741a.png)
+
+
 ### Setup the environment variable
 Setup the environment variable 'NOMAN_ADVDB_HOME' to the directory you want to keep your flat file databases
 
