@@ -11,7 +11,7 @@ public class SimpleQuery {
 		
 		// Just printing the query results not actually updating the database
 		// TODO: Implement database table changes after flat serialization is achieved
-		// Update to the database is not done because the action will not be reproducible
+		// Update to the database file is not done because the action will not be reproducible
 		
 		Database products = Database.importFlatDatabase("Products");
 		if (products != null) {
