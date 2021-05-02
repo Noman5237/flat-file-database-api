@@ -1,6 +1,8 @@
 Flat file database API in Java with schemas
 Check the package app scripts to see how to use this database api
 
+# User documentation
+
 ### Create a simple Schema Class which implements Schema interface
 
 ```java
@@ -105,5 +107,16 @@ if (customers != null) {
     System.out.println(queryResults);
 }
 ```
+# Developer Documentation
 
-#### Create issues if you have any queries.
+TODO: Add more developer documentation
+
+### Database API UML
+![image](https://user-images.githubusercontent.com/31593633/116812150-0c3d5e00-ab6f-11eb-8f46-d43d9ad20456.png)
+
+### Query API UML
+![image](https://user-images.githubusercontent.com/31593633/116812134-fa5bbb00-ab6e-11eb-8456-caae075dfb7a.png)
+
+
+
+#### Create issues if you have any queries or suggestions.
