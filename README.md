@@ -70,6 +70,9 @@ public void setCustomerType(CustomerType customerType) {
 }
 ```
 
+### Setup the environment variable
+Setup the environment variable 'NOMAN_ADVDB_HOME' to the directory you want to keep your flat file databases
+
 ### Use API to write to database
 
 ```java
