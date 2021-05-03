@@ -26,14 +26,14 @@ public interface Schema extends Serializable, Cloneable {
 	
 	default void set(String key, Object obj) throws UnsupportedOperationException {
 		String methodName = "set" + key.substring(0, 1).toUpperCase() + key.substring(1);
-		Optional<Method> setterPermission = Arrays.stream(getClass().getMethods())
+		Optional<Method> requiredSetterMethod = Arrays.stream(getClass().getMethods())
 				.filter(method -> method.getName().equals(methodName))
 				.findFirst();
-		if (setterPermission.isPresent()) {
-			Method setter = setterPermission.get();
-			Class<?> returnType = setter.getParameterTypes()[0];
+		if (requiredSetterMethod.isPresent()) {
+			Method setter = requiredSetterMethod.get();
+			Class<?> parameterType = setter.getParameterTypes()[0];
 			try {
-				setter.invoke(this, returnType.cast(obj));
+				setter.invoke(this, parameterType.cast(obj));
 			} catch (IllegalAccessException | InvocationTargetException e) {
 				throw new UnsupportedOperationException(e.getMessage() + " .Cannot perform required operation which is not supported by the schema");
 			}
