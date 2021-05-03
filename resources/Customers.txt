@@ -1,6 +1,6 @@
 com.noman.app.schemas.simple.customer.Customer
 Basic Customer Info.
-6
+3
 1,Md. Abdullah,20,MALE,0,RARE
 2,Emma,30,FEMALE,10,MODERATE
 4,Mr. Noman,40,MALE,25,MODERATE
