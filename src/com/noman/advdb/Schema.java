@@ -35,7 +35,9 @@ public interface Schema extends Serializable, Cloneable {
 			try {
 				setter.invoke(this, parameterType.cast(obj));
 			} catch (IllegalAccessException | InvocationTargetException e) {
-				throw new UnsupportedOperationException(e.getMessage() + " .Cannot perform required operation which is not supported by the schema");
+				throw new UnsupportedOperationException(e.getMessage() + ". Cannot perform required operation which is not supported by the schema");
+			} catch (ClassCastException e) {
+				throw new ClassCastException(e.getMessage() + ". Type of argument is not compatible with the setter method");
 			}
 		}
 	}
